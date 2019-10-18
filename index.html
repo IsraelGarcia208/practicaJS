@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>practica 1</title>
+    <script type="text/javascript">
+      
+        alert("hola mundo!");
+        var x=1;
+        var y=6;
+        alert(x+y);
+        var mensaje="hola este es mi sitio";
+        alert(mensaje);
+        var texto1="me muero por 'conocerte'";
+        var texto2='me muero por "conocerte"';
+        alert(texto1);
+        alert(texto2);
+        var dias=["lunes","martes","miercoles","jueves","viernes","sabado","domingo"];
+        alert(dias);
+        //var diaseleccionado=dias[0]; //seleccion de posiciones
+        //uniwebsidad.com
+
+//*********************************************************************************************************************
+var valores=[true, 5,false,"hola","adios",2];
+        var resultado=valores[3] >valores[4];
+        alert(resultado)
+
+        var valor1=valores[0];
+        var valor2=valores[2];
+        var res=valor1 && valor2; 
+        alert(res);
+
+        var num1=5;
+        var num2=2;
+
+//*****************************************************************************************************
+//DNI
+var letras=['T','R','A','W','G','M','Y','F','P','D','X','B','N','Z','S','Q','V','H','L','C','K','E','T'];
+        var numero=prompt("introduce tu numero DNI(SIN LA LETRA)");
+        var letras=prompt("introduce la letra DNI (en mayuscula)");
+        letra=letra.toUpperCase();
+
+        if(numero<0 || numero>99999999)
+        {
+            alert("numero proporcionado no es valido");
+        }
+        else
+        {
+            var letraCalcu=letras[numero %23];
+            if(letraCalcu!=letra)
+            {
+                alert("la letra o el numero proporcionado no son correctos");
+            }
+            else
+            {
+                alert("el numero DNI y su letra con correctos");    
+            }
+        }
+//*************************************************************************************************
+//ciclo for que se aplican a arreglos
+var dias=["lunes","martes","miercoles","jueves","viernes","sabado","domingo",];
+      for(i in dias){alert(dias[i]);}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
